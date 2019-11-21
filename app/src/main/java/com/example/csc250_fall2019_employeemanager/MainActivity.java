@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
         if(Core.theEmployee != null)
         {
             int size = Core.theEmployees.size() - 1;
-            Toast.makeText(this, "Received result: " + Core.theEmployees.get(size).toString() + "", Toast.LENGTH_LONG).show();
+            int numEmployees = Core.theEmployees.size();
+            Toast.makeText(this, "Received result: " + Core.theEmployees.get(size).toString() + "\n" + "Number of Employees: " + numEmployees, Toast.LENGTH_LONG).show();
 
         }
 
