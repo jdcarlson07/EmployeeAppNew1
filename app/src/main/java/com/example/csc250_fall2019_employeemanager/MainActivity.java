@@ -29,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         if(Core.theEmployee != null)
         {
-            Toast.makeText(this, "Received result: " + Core.theEmployee.toString() + "", Toast.LENGTH_LONG).show();
+            int size = Core.theEmployees.size() - 1;
+            Toast.makeText(this, "Received result: " + Core.theEmployees.get(size).toString() + "", Toast.LENGTH_LONG).show();
 
         }
 
